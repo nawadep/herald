@@ -1,0 +1,112 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.body {
+  background-size: cover;
+  background-position: center;
+  font-family: "Open Sans", sans-serif;
+  color: antiquewhite;
+}
+
+.navbar{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  background-color: rgb(5, 118, 133);
+  position: sticky;
+  top:0;
+}
+.navbar ul{
+  display:flex ;
+  list-style: none;
+  margin: 20px 0px;
+  color: rgba(65, 6, 65, 0.854);
+}
+.navbar ul li{
+  font-family: century;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.navbar ul li a{
+  text-decoration:none ;
+  color:rgba(65, 6, 65, 0.854);
+  padding: 8px 25px;
+  transition: all .5s ease;
+}
+.navbar ul li a:hover{
+  background-color: #ffffff;
+  color:black ;
+  box-shadow: 0 0 10px white;
+}
+
+/* home section */
+#HOME{
+  display: flex;
+  flex-direction: column;
+  background-color:rgba(0,0,0,0.5);
+  height: 840px;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+
+}
+#HOME::before{
+  content:"" ;
+  position: absolute;
+  top:0;
+  right:0;
+  background:url('me.jpeg') no-repeat center/cover;
+  height: 900px;
+  width: 100%;
+  z-index: -1;
+  opacity: .8;
+
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+  align-items: center;
+  position: absolute;
+  top: 30%;
+  right:10%;
+}
+.headings{
+  font-family: century;
+  font: size 3rem ;
+  text-align: center;
+  margin: 40px 0px;
+}
+#about{
+  display:block;
+  flex-direction:column;
+  box-sizing: 20px;
+  padding: 20px;
+  margin: bottom 50px; 
+  text-align: center;
+  background-color: rgb(140, 54, 194);
+
+}
+
+#pic{
+  display: flex;
+  width: 700;
+}
+#pic img{
+  width: 5500px;
+  height: 450px;
+}
+#intro{
+  display:flex;
+  flex-direction: column;
+  text-align: justify;
+  padding: 10px;
+
+}
+#intro h2{
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
